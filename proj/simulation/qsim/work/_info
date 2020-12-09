@@ -9,32 +9,34 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim
-Ecrc_8_encoder
-Z1 w1607133068
-Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z3 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 ^M[R>L941CzW^5^z4gfb52
-Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-Z7 DPx9 cycloneiv 20 cycloneiv_components 0 22 A=5Z=j^V:4BYGPNKNFE9o0
-!i122 44
+Ecrc_8_checker_serial
+Z1 w1607519218
+Z2 DPx9 cycloneiv 19 cycloneiv_atom_pack 0 22 ^M[R>L941CzW^5^z4gfb52
+Z3 DPx9 cycloneiv 20 cycloneiv_components 0 22 A=5Z=j^V:4BYGPNKNFE9o0
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 130
 R0
-Z8 8CRC_8_AUTOSTAR.vho
-Z9 FCRC_8_AUTOSTAR.vho
+Z10 8CRC_8_AUTOSTAR.vho
+Z11 FCRC_8_AUTOSTAR.vho
 l0
-L78 1
-VK>MlPGm:1g=]RM6=ZHk=k1
-!s100 H>`^QP`m]Nd4ME6[T:mT:0
-Z10 OV;C;2020.1;71
+L37 1
+Ve;K?8a9fX_eH^H[bcBHg61
+!s100 VDJMPLeIfO>h5LgSgCXDC0
+Z12 OV;C;2020.1;71
 32
-Z11 !s110 1607133070
+Z13 !s110 1607519220
 !i10b 1
-Z12 !s108 1607133069.000000
-Z13 !s90 -work|work|CRC_8_AUTOSTAR.vho|
-Z14 !s107 CRC_8_AUTOSTAR.vho|
+Z14 !s108 1607519220.000000
+Z15 !s90 -work|work|CRC_8_AUTOSTAR.vho|
+Z16 !s107 CRC_8_AUTOSTAR.vho|
 !i113 1
-Z15 o-work work
-Z16 tExplicit 1 CvgOpt 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
@@ -42,109 +44,201 @@ R4
 R5
 R6
 R7
+R8
+R9
+DEx4 work 20 crc_8_checker_serial 0 22 e;K?8a9fX_eH^H[bcBHg61
+!i122 130
+l236
+L46 3254
+V9;=e>SL7O>2idB9j_3AR>3
+!s100 YGFDaQi3WNmKR2V1NGWNK0
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Ecrc_8_checker_serial_vhd_vec_tst
+Z19 w1607519217
+R7
+R8
+!i122 131
+R0
+Z20 8Checker.vwf.vht
+Z21 FChecker.vwf.vht
+l0
+Z22 L32 1
+V0EGT4G>I^2V3EOHzbTHLo0
+!s100 :i2[CYMa^gSCieR0FiVZ=0
+R12
+32
+Z23 !s110 1607519221
+!i10b 1
+R14
+Z24 !s90 -work|work|Checker.vwf.vht|
+Z25 !s107 Checker.vwf.vht|
+!i113 1
+R17
+R18
+Acrc_8_checker_serial_arch
+R7
+R8
+Z26 DEx4 work 32 crc_8_checker_serial_vhd_vec_tst 0 22 0EGT4G>I^2V3EOHzbTHLo0
+!i122 131
+l49
+Z27 L34 63
+V3c^e@nmCF=@hel1L5iMaU2
+!s100 mnHlQzRVoYZU_NCn0W_Sh3
+R12
+32
+R23
+!i10b 1
+R14
+R24
+R25
+!i113 1
+R17
+R18
+Ecrc_8_encoder
+Z28 w1607133068
+R4
+R2
+R6
+R7
+R8
+R3
+!i122 44
+R0
+R10
+R11
+l0
+L78 1
+VK>MlPGm:1g=]RM6=ZHk=k1
+!s100 H>`^QP`m]Nd4ME6[T:mT:0
+R12
+32
+Z29 !s110 1607133070
+!i10b 1
+Z30 !s108 1607133069.000000
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
 DEx4 work 13 crc_8_encoder 0 22 K>MlPGm:1g=]RM6=ZHk=k1
 !i122 44
 l172
 L112 630
 Vd7J?KcGBBC6KC?hPKmnV41
 !s100 Q1LfUhI4[8MIWC?Qf;CSZ0
-R10
-32
-R11
-!i10b 1
 R12
-R13
-R14
-!i113 1
+32
+R29
+!i10b 1
+R30
 R15
 R16
+!i113 1
+R17
+R18
 Ecrc_8_encoder_vhd_vec_tst
-Z17 w1607133067
-R5
-R6
+Z31 w1607133067
+R7
+R8
 !i122 45
 R0
-Z18 8Encoder.vwf.vht
-Z19 FEncoder.vwf.vht
+Z32 8Encoder.vwf.vht
+Z33 FEncoder.vwf.vht
 l0
-L32 1
+R22
 VIL=Z:6Fcz0A<Q>8dV1Vcz2
 !s100 d5Vkla>0B]BXnmUe?khaA0
-R10
+R12
 32
-R11
+R29
 !i10b 1
-Z20 !s108 1607133070.000000
-Z21 !s90 -work|work|Encoder.vwf.vht|
-Z22 !s107 Encoder.vwf.vht|
+Z34 !s108 1607133070.000000
+Z35 !s90 -work|work|Encoder.vwf.vht|
+Z36 !s107 Encoder.vwf.vht|
 !i113 1
-R15
-R16
+R17
+R18
 Acrc_8_encoder_arch
-R5
-R6
-Z23 DEx4 work 25 crc_8_encoder_vhd_vec_tst 0 22 IL=Z:6Fcz0A<Q>8dV1Vcz2
+R7
+R8
+DEx4 work 25 crc_8_encoder_vhd_vec_tst 0 22 IL=Z:6Fcz0A<Q>8dV1Vcz2
 !i122 45
 l45
-Z24 L34 115
-Z25 V0V1<YJ@O;U6fDWT2MRD3B0
-Z26 !s100 9a7lG7DhX[ZC2onF>@3R^0
-R10
+L34 115
+V0V1<YJ@O;U6fDWT2MRD3B0
+!s100 9a7lG7DhX[ZC2onF>@3R^0
+R12
 32
-R11
+R29
 !i10b 1
-R20
-R21
-R22
+R34
+R35
+R36
 !i113 1
-R15
-R16
+R17
+R18
 Ehard_block
-R1
-R2
-R3
+R28
 R4
-R5
+R2
 R6
 R7
+R8
+R3
 !i122 44
 R0
-R8
-R9
+R10
+R11
 l0
 L35 1
 V5mcF]JUg7TS^l0EMa_h4A1
 !s100 Q?IbEnM>aW3cc=hi`GCc71
-R10
-32
-R11
-!i10b 1
 R12
-R13
-R14
-!i113 1
+32
+R29
+!i10b 1
+R30
 R15
 R16
+!i113 1
+R17
+R18
 Astructure
-R2
-R3
 R4
-R5
+R2
 R6
 R7
+R8
+R3
 DEx4 work 10 hard_block 0 22 5mcF]JUg7TS^l0EMa_h4A1
 !i122 44
 l65
 L51 20
 VMkbPfL8S?h^i>Mg3GSGD`1
 !s100 O>:lWQfHCcIaXgQ<=Tgn10
-R10
-32
-R11
-!i10b 1
 R12
-R13
-R14
-!i113 1
+32
+R29
+!i10b 1
+R30
 R15
 R16
+!i113 1
+R17
+R18

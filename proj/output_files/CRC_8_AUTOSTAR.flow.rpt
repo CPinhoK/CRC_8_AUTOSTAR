@@ -1,5 +1,5 @@
 Flow report for CRC_8_AUTOSTAR
-Sat Dec 05 01:51:08 2020
+Wed Dec 09 13:21:38 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 05 01:51:08 2020       ;
+; Flow Status                        ; Successful - Wed Dec 09 13:21:38 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; CRC_8_AUTOSTAR                              ;
-; Top-level Entity Name              ; CRC_8_Encoder                               ;
+; Top-level Entity Name              ; CRC_8_Checker_Serial                        ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 16 / 14,400 ( < 1 % )                       ;
-;     Total combinational functions  ; 16 / 14,400 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 0 / 14,400 ( 0 % )                          ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 24 / 81 ( 30 % )                            ;
+; Total logic elements               ; 137 / 14,400 ( < 1 % )                      ;
+;     Total combinational functions  ; 136 / 14,400 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 57 / 14,400 ( < 1 % )                       ;
+; Total registers                    ; 57                                          ;
+; Total pins                         ; 4 / 81 ( 5 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 552,960 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -69,31 +69,31 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/05/2020 01:43:39 ;
+; Start date & time ; 12/09/2020 13:19:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CRC_8_AUTOSTAR      ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                  ;
-+-------------------------------------+----------------------------------------+----------------+---------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name   ; Section Id                        ;
-+-------------------------------------+----------------------------------------+----------------+---------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589187.160713261915028         ; --             ; --            ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --            ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --            ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --            ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --            ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --             ; --            ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>         ; --            ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --             ; --            ; eda_simulation                    ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; CRC_8_Encoder ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; CRC_8_Encoder ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; CRC_8_Encoder ; Top                               ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --             ; --            ; --                                ;
-; TOP_LEVEL_ENTITY                    ; CRC_8_Encoder                          ; CRC_8_AUTOSTAR ; --            ; --                                ;
-+-------------------------------------+----------------------------------------+----------------+---------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                         ;
++-------------------------------------+----------------------------------------+----------------+----------------------+-----------------------------------+
+; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name          ; Section Id                        ;
++-------------------------------------+----------------------------------------+----------------+----------------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 242211439874442.160751999325704        ; --             ; --                   ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --                   ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --                   ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --                   ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --             ; --                   ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --             ; --                   ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>         ; --                   ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --             ; --                   ; eda_simulation                    ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; CRC_8_Checker_Serial ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; CRC_8_Checker_Serial ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; CRC_8_Checker_Serial ; Top                               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --             ; --                   ; --                                ;
+; TOP_LEVEL_ENTITY                    ; CRC_8_Checker_Serial                   ; CRC_8_AUTOSTAR ; --                   ; --                                ;
++-------------------------------------+----------------------------------------+----------------+----------------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -101,27 +101,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:42     ; 1.0                     ; 4851 MB             ; 00:00:27                           ;
-; Fitter               ; 00:00:14     ; 1.0                     ; 5584 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4752 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4756 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4870 MB             ; 00:00:37                           ;
+; Fitter               ; 00:01:04     ; 1.0                     ; 5593 MB             ; 00:00:09                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4749 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.0                     ; 4756 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4709 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4704 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4708 MB             ; 00:00:01                           ;
-; Total                ; 00:01:14     ; --                      ; --                  ; 00:00:51                           ;
+; Total                ; 00:01:32     ; --                      ; --                  ; 00:00:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -135,21 +120,6 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-GF1QKF7  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -161,21 +131,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off CRC_8_AUTOSTAR 
 quartus_asm --read_settings_files=off --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
 quartus_sta CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
 quartus_eda --read_settings_files=off --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Waveform.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Waveform.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/" CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Waveform.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Waveform.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/" CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Waveform.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Waveform.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/" CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Waveform.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Waveform.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/" CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Waveform.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Waveform.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/" CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Waveform.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Encoder.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/" CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Waveform.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Encoder.vwf.vht"
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR --vector_source="C:/Users/Paulo Pinho/Desktop/ACA/proj/Encoder.vwf" --testbench_file="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/Encoder.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Paulo Pinho/Desktop/ACA/proj/simulation/qsim/" CRC_8_AUTOSTAR -c CRC_8_AUTOSTAR
 
 
 

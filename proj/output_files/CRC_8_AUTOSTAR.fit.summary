@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sat Dec 05 01:44:43 2020
+Fitter Status : Successful - Wed Dec 09 13:21:16 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : CRC_8_AUTOSTAR
-Top-level Entity Name : CRC_8_Encoder
+Top-level Entity Name : CRC_8_Checker_Serial
 Family : Cyclone IV GX
 Device : EP4CGX15BF14C6
 Timing Models : Final
-Total logic elements : 16 / 14,400 ( < 1 % )
-    Total combinational functions : 16 / 14,400 ( < 1 % )
-    Dedicated logic registers : 0 / 14,400 ( 0 % )
-Total registers : 0
-Total pins : 24 / 81 ( 30 % )
+Total logic elements : 137 / 14,400 ( < 1 % )
+    Total combinational functions : 136 / 14,400 ( < 1 % )
+    Dedicated logic registers : 57 / 14,400 ( < 1 % )
+Total registers : 57
+Total pins : 4 / 81 ( 5 % )
 Total virtual pins : 0
 Total memory bits : 0 / 552,960 ( 0 % )
 Embedded Multiplier 9-bit elements : 0
